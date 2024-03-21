@@ -5,14 +5,30 @@ class DataDAO
     private $sqlClient;
 
     //Constructeur
-    public function __construct()
+   /* public function __construct()
     {
         try {
-            $this->sqlClient = new PDO('mysql:host=localhost;dbname=smarthome;charset=utf8', 'root', '');
+            $this->sqlClient = new PDO('mysql:host=dbfatouaudrey.mysql.database.azure.com;dbname=smarthome;charset=utf8', 'root', '');
         } catch (Exception $e) {
             die($e->getMessage());
         }
+    }*/
+
+    public function __construct()
+{
+    try {
+        $host = 'dbfatouaudrey.mysql.database.azure.com';
+        $dbname = 'smarthome';
+        $username = 'fatou'; 
+        $password = 'Audrey24';
+
+        $this->sqlClient = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+        $this->sqlClient->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+    } catch (Exception $e) {
+        die($e->getMessage());
     }
+}
+
    
     public function setInscription(Utilisateur $utilisateur)
     {
