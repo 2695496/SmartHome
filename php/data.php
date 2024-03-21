@@ -32,14 +32,14 @@ class DataDAO
    
     public function setInscription(Utilisateur $utilisateur)
     {
-        $query = 'INSERT INTO utilisateur(nom, prenom, email, psswrd, date_inscription ) VALUES (:nom, :prenom, :email, :psswrd, NOW())';
+        $query = 'INSERT INTO utilisateur(nom, prenom, email, password, date_inscription ) VALUES (:nom, :prenom, :email, :password, NOW())';
 
         $insert = $this->sqlClient->prepare($query);
         $insert->execute([
             'nom' => $utilisateur->getNom(),
             'prenom' => $utilisateur->getPrenom(),
             'email' => $utilisateur->getEmail(),
-            'psswrd' => $utilisateur->getPassword()
+            'password' => $utilisateur->getPassword()
         ]);
         return true;
     }
