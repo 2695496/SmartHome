@@ -1,0 +1,53 @@
+html
+{box-sizing: border-box;}
+*,*::before, *::after{box-sizing: inherit;}
+body{
+    background-color: #dddddd;
+}
+
+header{
+    background-color: #007967;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    color :#fff;
+    text-decoration: none;
+}
+
+.acceuil{
+  background-color: #ffffff; 
+  max-width: 60rem;
+  padding: 2rem;
+  margin: 1rem auto; 
+  text-align: center;
+  
+}
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    background-color: #007967;
+}

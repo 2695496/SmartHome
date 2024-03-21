@@ -1,0 +1,52 @@
+
+body{
+    background-color: #007667;
+}
+/* Alignement vertical et horizontal du formulaire */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style du formulaire */
+  #formulaire {
+    width: 400px;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  /* Style des champs du formulaire */
+  input[type="email"], input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  /* Style du bouton de soumission */
+  #soumettre {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  /* Style du lien pour aller à la page d'inscription */
+  #formulaire a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  /* Style du lien pour aller à la page d'inscription au survol */
+  #formulaire a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,129 @@
+html
+{box-sizing: border-box;}
+*,*::before, *::after{box-sizing: inherit;}
+body{
+    background-color: #dddddd;
+}
+
+header{
+    background-color: #007967;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    }
+    
+    header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    }
+    
+    header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+    }
+    
+    header nav ul li{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    }
+    
+    header nav ul li a {
+    color :#fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    }
+    
+    header nav ul li a:hover {
+    border-bottom-color: #fff;
+    }
+
+    
+
+    .acceuil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    }
+    
+    #titre {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #007967;
+    }
+    
+    #s
+    
+    logan {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #555;
+    }
+    
+    #contexte {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    }
+    
+    #image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    }
+    
+    h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007967;
+    }
+    
+    #comment textarea {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    }
+    
+    #formulaire input[type="text"],
+    #formulaire input[type="email"],
+    #formulaire input[type="tel"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    }
+    
+    #soumettre {
+    background-color: #007967;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    }
+    
+    #soumettre:hover {
+    background-color: #00524d;
+    }
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    background-color: #007967;
+}

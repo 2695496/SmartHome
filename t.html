@@ -1,0 +1,75 @@
+<!DOCTYPE html>   
+<html>
+    <head>
+           <title> SMART HOME </title>
+           <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+        <header>
+            
+            <nav class="menu">
+                <ul >
+                  <a href="./Eclairage.html"><li>Eclairage</li></a>
+                   <a href="/"><li>Chauffage</li></a>
+                    <a href="/"><li>Panneaux </li></a>
+                    <a href="/"><li>Alarme </li></a>
+                    <a href="/"><li>Porte</li></a>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+        <section>
+        <!---- Le Titre -->
+        <h1 id = "titre"> SMART HOME </h1>
+        <h4 id="slogan">Construisons votre futur</h4>
+        <!---Le Paragraphe1-->
+        <p id="contexte">SMART HOME vous propose la gestion manuelle ou automatique
+           <br> de votre habitation afin de vous garantir une gestionoptimale 
+            de votre <br> maison et surtout de votre énergie là où elle n'est
+            pas utile, et vous <br> permets de visualiser et commander à distance !!
+        </p>
+       
+        <img id = "image" src="Image/Maison_intelligente.jpg">
+        
+        <form id="boutons">
+            <input type="radio" id="maison" name="fav_language" value="Maison">
+            <label for="html">Maison</label> <br>
+            <input type="radio" id="hotel" name="fav_language" value="Hotel">
+            <label for="css">Hotel</label> <br>
+            <input type="radio" id="residence" name="fav_language" value="Résidence">
+            <label for="javascript">Résidence</label> <br>
+            <input type="radio" id="hopital" name="fav_language" value="Résidence">
+            <label for="javascript">Hopital</label> <br>
+            <input type="radio" id="appartement" name="fav_language" value="Appartement">
+            <label for="javascript">Appartement</label>
+         </form>
+        
+           <h3> N'hésiter pas de nous faire part en quelque ligne vos attentes :</h3>
+            
+                <form id="comment">
+                    <textarea cols="30" rows="20"></textarea>
+                </form>
+                <br>
+            <form id="formulaire">
+                <input id="nom" type="text" name=" nom" placeholder="Veuillez entrer votre nom">
+                <br> <br>
+            <input id="Prenom" type="text" first_name=" Prenom" placeholder="Veuillez entrer votre Prenom">
+                <br> <br>
+                <input type="email" placeholder="Veuillez entrer votre e-mail">
+                <br> <br>
+                <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro" 
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="12">
+                 <br> <br>
+                <input id="soumettre" type="submit" value="Soumettre">
+            </form>
+           
+    </section>
+      </main>
+      <footer>
+        &copy;Fatoumata Kone
+      </footer>
+    </body>
+
+    
+</html>
