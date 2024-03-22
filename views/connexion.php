@@ -13,7 +13,7 @@ if(isset($_POST['send'])){
     if(0 !== count($elememnt)){
        
         $elememnt = $elememnt[0];
-        if($elememnt['psswrd'] === $_POST['pass']){
+        if($elememnt['password'] === $_POST['pass']){
            $_SESSION['id'] = $elememnt['id_utilisateur'] ;
            $_SESSION['prenom'] = $elememnt['prenom']. ' ' . $elememnt['nom'] ;
             header('location:eclairage.php');
